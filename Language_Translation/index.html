@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TRANSLATION APP</h1>
+    <div class="input-group">
+      <textarea id="input" rows="5" placeholder="Enter text to translate"></textarea>
+    </div>
+    <div class="controls">
+      <div class="dropdown">
+        <span class="dropdown-toggle" id="source-lang">
+          <span id="source-lang-text">Auto Detect</span>
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <ul class="dropdown-menu" id="source-menu">
+          <li data-lang="auto">Auto Detect</li>
+          <li data-lang="en">English</li>
+          <li data-lang="es">Spanish</li>
+          <li data-lang="fr">French</li>
+          <li data-lang="hi">Hindi</li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <span class="dropdown-toggle" id="target-lang">
+          <span id="target-lang-text">Spanish</span>
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <ul class="dropdown-menu" id="target-menu">
+          <li data-lang="en">English</li>
+          <li data-lang="es">Spanish</li>
+          <li data-lang="fr">French</li>
+          <li data-lang="hi">Hindi</li>
+        </ul>
+      </div>
+      <button id="translate-btn">Translate</button>
+    </div>
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
