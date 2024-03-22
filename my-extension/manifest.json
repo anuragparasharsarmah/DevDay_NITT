@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "Bookmark Manager",
+    "version": "1.0",
+    "description": "A minimalistic Chrome extension for bookmark management",
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["bookmarks"]
+  }
